@@ -20,7 +20,5 @@ import { ProductsComponent } from './product-module/products/products.component'
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'not-found', pathMatch: 'full' }
     ])
-  ],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+
+import { AppComponent } from './app.component';
