@@ -1,0 +1,17 @@
+h1 {
+    font-size: 4rem;
+    color: red;
+}
+
+p {
+    font-size: 30rem;
+    color: blue;
+}
+
+.outer{
+    color: green;
+}
+
+.inner> p {
+    color: orange;
+}

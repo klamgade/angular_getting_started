@@ -1,0 +1,27 @@
+.random {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.example-card {
+    max-width: 400px;   
+  }
+
+  mat-card:nth-last-child(){
+      flex-grow: 2;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+@media all and (max-width:400px) {
+    .random {
+        background-color: hotpink;
+    }
+}
