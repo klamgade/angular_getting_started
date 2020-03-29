@@ -1,14 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './home/welcome.component';
 import { ProductsComponent } from './product-module/products/products.component';
 import { IndexComponent } from './index/index.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatSortModule } from '@angular/material';
 import { DataTableComponent } from './data-table/data-table.component';
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule, MatSortModule, MatTableModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,8 +25,9 @@ import { DataTableComponent } from './data-table/data-table.component';
     MatCardModule,
     BrowserAnimationsModule,
     MatSortModule,
-
-
+    MatTableModule,
+    FormsModule,
+    HttpClientModule,
 
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
